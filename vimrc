@@ -2,22 +2,11 @@
 " 基本插件，语法高亮的支持、缩进等
 " --> yum install vim vim-scripts vim-doc
 
-set nocompatible
-
-if has("systax")
-    syntax on		"
-endif
-colorscheme ron		"
-
-"detect file type
-filetype on
-filetype plugin on
-" -----------------------------------------------------------------
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=~/.vim/plugin/Vundle.vim
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
@@ -63,6 +52,10 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-" 此后添加自己需要的其他vim配置
 set number
+
+Bundle 'scrooloose/nerdtree'
+map <F2> :NERDTreeToggle<CR>
+let NERDTreeIgnore=['\.pyc$', '\~$\']
+
 
