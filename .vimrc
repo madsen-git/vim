@@ -1,4 +1,5 @@
-debian.vim
+" 
+" --> yum install vim vim-scripts vim-doc
 
 set nocompatible
 
