@@ -1,3 +1,7 @@
+set fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
+set termencoding=utf-8
+set encoding=utf-8
+
 " 基本插件，语法高亮的支持、缩进等
 " --> yum install vim vim-scripts vim-doc
 
